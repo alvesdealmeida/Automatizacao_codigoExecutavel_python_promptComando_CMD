@@ -1,0 +1,59 @@
+# comandos gerados para automatizacao de criacao de arquivo executavel
+# codigos feitos automaticamente dentro do prompt de comando CMD.
+
+import pyautogui
+import time
+import pyperclip
+pyautogui.PAUSE = 1
+
+pyautogui.press("winleft")
+pyautogui.write("cmd")
+pyautogui.press("enter")
+
+pyautogui.write("cd Desktop")
+pyautogui.press("enter")
+
+
+pyautogui.write("copy con widget1.py")
+pyautogui.press("enter")
+
+pyautogui.write("from tkinter import * ")
+pyautogui.press("enter")
+
+pyautogui.write("top = Frame(); top.pack(fill='both', expand=True) ")
+pyautogui.press("enter")
+
+pyautogui.write("f = Frame(top); f.pack(fill='x')")
+pyautogui.press("enter")
+
+pyautogui.write("a = Label(f,text='A'); a.pack(side='left',expand=True, fill='y')")
+pyautogui.press("enter")
+
+pyautogui.write("b = Label(f,text='B'); b.pack(side='bottom',expand=True, fill='both')")
+pyautogui.press("enter")
+
+pyautogui.write("c = Label(f,text='C'); c.pack(side='right')")
+pyautogui.press("enter")
+
+pyautogui.write("d = Label(top,text='D'); d.pack(side='top')")
+pyautogui.press("enter")
+
+pyautogui.write("for w in (a,b,c,d):")
+pyautogui.press("enter")
+
+pyautogui.press("tab")
+pyautogui.write("w.configure(relief='groove', border=10, font='Time 24 bold')")
+pyautogui.press("enter")
+
+pyautogui.press("tab")
+pyautogui.write("w.pack(side='left', expand=True, fill='both')")
+pyautogui.press("enter")
+
+pyautogui.write("top.mainloop()")
+pyautogui.press("enter")
+
+pyautogui.hotkey("ctrl","z")
+pyautogui.press("enter")
+
+pyautogui.write("python widget1.py")
+pyautogui.press("enter")
